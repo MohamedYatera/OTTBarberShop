@@ -1,7 +1,36 @@
-body{
+body{ 
 
-    background-color: rgb(22, 20, 20);
+    background-color: #171414;
     z-index: 0;
         
     height: 100vh;
 }
+
+.paragraph-text{
+    color: #a7a9be;
+}
+
+.headline-text{
+    color: #fffffe;
+}
+
+.gold-text {
+    color: #b8860b;
+  }
+  
+
+.navbar-nav .nav-item .nav-link { /* nav-link color */
+    color: #b8860b;
+    font-size: 18px;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: gold;
+    
+}
+
+.larger-image {
+    width: 75%; /* Make the image take up the full width of the column */
+    max-width: none; /* Remove the max-width restriction */
+    padding-right: 25px; /* Add some right padding */
+  }

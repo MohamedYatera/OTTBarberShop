@@ -1,0 +1,18 @@
+.orangeyellow-pagebreak{
+    position: relative;
+   
+}
+
+.orangeyellow-pagebreak-test{
+    position: absolute; 
+    top: 55%;
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    left: 75px;
+}
+
+.purp-text{
+    color: rgb(252, 252, 252);
+}
+

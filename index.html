@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
     <title>Document</title>
 
     <style>
         section{
-          padding: 60px 0;
+          padding-top: 70px;
         }
       </style>
 </head>
 
- <body class="body"">
+ <body class="body">
 
   <!-- navbar -->
    <nav class="navbar navbar-expand-md pt-4 pb-4">
@@ -22,7 +25,7 @@
       <!-- navbar brand / title -->
       <a class="navbar-brand" href="#intro">
         <span class="gold-text fw-bold " style="font-size: 27px;">
-          <i class="bi bi-book-half"></i> <!-- icon -->
+          <i class="bi bi-scissors"></i> <!-- icon -->
           OTT BarberShop
         </span>
       </a>
@@ -35,23 +38,29 @@
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link  fw-bold" href="#topics">Home</a>
+            <a class="nav-link  fw-bold" href="index.html">Home</a>
           </li>
           <li class="nav-item fw-bold">
-            <a class="nav-link" href="#services" style="color: #b82c2c;"> Services</a>
+            <a class="nav-link" href="services.html" style="color: #b82c2c;"> Services</a>
           </li>
           
           <li class="nav-item fw-bold">
-            <a class="nav-link fw-bold" href="#reviews">Reviews</a>
+            <a class="nav-link fw-bold" href="reviews.html">Reviews</a>
           </li>
          
           <li class="nav-item fw-bold">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" href="reachus.html">Reach Us</a>
           </li>
 
           <li class="nav-item ms-2 d-none d-md-inline">
-            <a class="btn btn-danger fw-bold" href="#booknow">Book Now</a>
+            <a class="btn btn-danger fw-bold" href="book.html">Book Now</a>
           </li>
+
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-danger fw-bold" id="dark-mode-toggle"><i class="bi bi-brightness-high"></i></a>
+          </li>
+
+          
        
           
         </ul>
@@ -61,10 +70,10 @@
 
  <!-- Text next to logo image -->
   <section id="intro">
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
       <div class="row g-4 justify-content-center align-items-center">
         <div class="col-md-7 text-center d-none d-md-block">
-          <img src="/assets/logo1.png" class="img-fluid larger-image" alt="clippers">
+          <img src="/assets/newlogo.png" class="img-fluid larger-image p-effect" alt="clippers" data-value="5">
         </div>
 
         <div class="col-md-5 text-center text-md-start">
@@ -90,7 +99,7 @@
       </div>
     </div>
 
-    <div class="contain-lg">
+    <div class="contain">
       <div class="row justify-content-evenly align-items-center mt-5">
         <div class="col-md-5 text-center">
           <p class="lead my-4 paragraph-text fw-semibold">At OTT Barbershop, we pride ourselves on offering a wide range of high-quality grooming services. From precision haircuts and classic shaves to modern styling and beard care, our experienced barbers are dedicated to providing personalized services tailored to meet your unique needs. Experience the best in barbering at OTT Barbershop, where your satisfaction is our top priority</p>
@@ -100,55 +109,178 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row align-items-center background-container-1">
+        <div class="col-md-3 list-prices-container ">
+          <p class="gold-text fw-semibold text-center">At OTT's Barbershop, we pride ourselves on our customer-centric approach, where the needs of our customers always take precedence. We prioritize delivering exceptional service tailored to each individual, ensuring that every visit exceeds expectations</p>
+          <div class="card border-0 " style="background-color: transparent; ">
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item  paragraph-text fw-bold" style="background-color: transparent;">Other Services</li>
+              <li class="list-group-item  paragraph-text" style="background-color: transparent;">Hair & Beard $40</li>
+              <li class="list-group-item paragraph-text" style="background-color: transparent;">Hair & Hot Shave $45</li>
+              <li class="list-group-item paragraph-text " style="background-color: transparent;">Beard $20</li>
+              <li class="list-group-item paragraph-text" style="background-color: transparent;">Full wax $20</li>
+              <li class="list-group-item paragraph-text" style="background-color: transparent;">Thread $20</li>
+              <li class="list-group-item paragraph-text" style="background-color: transparent;">Outline$20</li>
+              <li class="list-group-item paragraph-text" style="background-color: transparent;">Shampoo $20</li>
+            </ul>
+          </div>
 
+        </div>
 
-      </div>
+        <div> <img src="assets/background-o.png" alt="Background"></div>
+        <div class="col-md-3 card-container">
 
-      <div class="row g-0 align-items-center justify-content-center">
-        <div class="col-8 col-lg-4 col-xl-3">
-          <div class="card border-0">
-            <div class="card-body text-center py-4">
-              <h4 class="card-title">Haircut</h4>
-              <p class="display-5 my-4 fw-bold">$25</p>
-  
+          <div class="card border-3 border-opacity-55 mb-4 p-effect" data-value="5"  style="border-color: #0f0e17;">
+            <div class="card-body text-center">
+              <h4 class="card-title gold-text fw-bold">Haircut</h4>
+              <h4 class="fw-semibold">$25</h4>
             </div>
           </div>
-        </div>
-    </div>
 
-    <div class="row my-3 g-0 align-items-center justify-content-center">
-      <div class="col-8 col-lg-4 col-xl-3">
-        <div class="card border-0">
-          <div class="card-body text-center py-4">
-            <h4 class="card-title">Haircut</h4>
-            <p class="display-5 my-4 fw-bold">$25</p>
-
+          <div class="card border-3  border-opacity-55 mb-4 p-effect" data-value="7" style="border-color: #0f0e17;" >
+            <div class="card-body text-center">
+              <h4 class="card-title gold-text fw-bold">Haircut</h4>
+              <h4 class="fw-semibold">$25</h4>
+              <h4 class="fw-semibold">Kids (Under 12)</h4>
+            </div>
           </div>
-        </div>
-      </div>
-  </div>
 
-  <div class="row my-3 g-0 align-items-center justify-content-center">
-    <div class="col-8 col-lg-4 col-xl-3">
-      <div class="card border-0">
-        <div class="card-body text-center py-4">
-          <h4 class="card-title">Haircut</h4>
-          <p class="display-5 my-4 fw-bold">$25</p>
+          <div class="card border-3  border-opacity-55 p-effect" data-value="5" style="border-color: #0f0e17;">
+            <div class="card-body text-center">
+              <h4 class="card-title gold-text fw-bold">Haircut</h4>
+              <h4 class="fw-semibold">$15</h4>
+              <h4 class="fw-semibold">Military and Seniors</h4>
+            </div>
+          </div>
+          
+        </div> 
+    </div> 
+    
 
+    <!-- Meet our Team -->
+    <div class="row blackpurp-pagebreak">
+      <img src="assets/purple-black2-lines.png" alt="pagebreak">
+
+      <p class="display-4 headline-text fw-semibold blackpurp-pagebreak-test">Meet our team</p>
+
+      <div class="row c-pic-group gx-5">
+        
+          <div class="col">
+            <div class="card h-100 border-5 "  style="border-color: #2978A0;">
+              <img src="assets/moe-barber.png" class="card-img-top" alt="...">
+              <div class="card-body" >
+                <h5 class="card-title gold-text fw-semibold">Michael</h5>
+                <p class="card-text">Michael has been cutting hair for over 10 years. He specializes in precision haircuts and modern styling techniques, ensuring each client leaves with a look tailored to their unique preferences.</p>
+              </div>
+              <div class="card-footer">
+                <i class="bi bi-instagram"></i>
+                <small class="text-muted gradient-insta-text fw-semibold">OttBarberMichael</small>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col">
+            <div class="card h-100 border-5 "  style="border-color: #2978A0;">
+              <img src="assets/alejandro-barber.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title gold-text fw-semibold">Alejandro</h5>
+                <p class="card-text">Alejandro brings 8 years of experience to the barbering world, specializing in classic shaves and contemporary styles. His attention to detail and commitment to excellence ensure every client leaves looking their best.</p>
+              </div>
+              <div class="card-footer">
+                <i class="bi bi-instagram"></i>
+                <small class="text-muted gradient-insta-text fw-semibold">OttBarberAlejandro</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-5"  style="border-color: #2978A0;">
+              <img src="assets/jessica-barber.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title gold-text fw-semibold">Jessica</h5>
+                <p class="card-text">Jessica has been a barber for 5 years, specializing in creative haircuts and beard care. Her expertise and friendly approach make every visit enjoyable.</p>
+              </div>
+              <div class="card-footer">
+                <i class="bi bi-instagram"></i>
+                <small class="text-muted gradient-insta-text fw-semibold">OttBarberJessica</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-5 "  style="border-color: #2978A0;">
+              <img src="assets/bryan-barber.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title gold-text fw-semibold">Tye</h5>
+                <p class="card-text">Tye has been in the barbering industry for 7 years, specializing in fades and textured cuts. Known for his precision and creativity, Tye is dedicated to providing exceptional grooming experiences.</p>
+              </div>
+              <div class="card-footer">
+                <i class="bi bi-instagram"></i>
+                <small class="text-muted gradient-insta-text fw-semibold">OttBarberTye</small>
+              </div>
+            </div>
+          </div>
+
+      
+          
         </div>
       </div>
     </div>
-</div>
-
-
     
-  </div>
+  </section>
 
+  <section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4 class="fw-semibold">Company</h4>
+            <ul>
+              <li><a href="services.html"> our services</a></li>
+              <li><a href="#"> privacy policy</a></li>
+              <li><a href="#"> affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="fw-semibold">online shop</h4>
+            <ul>
+              <li><a href="#">Merch</a></li>
+              <li><a href="#">Equipment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="fw-semibold">Contact us</h4>
+            <ul>
+              <li><a href="reachus.html"> xxx-xxx-xxxx</a></li>
+              <li><a href="reachus.html"> Address</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="fw-semibold">follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-yelp"></i></a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </footer>
 
   </section>
-    
 
+
+
+
+    <script src="JS/dark-mode.js"></script>
+    <script src="JS/parallax.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

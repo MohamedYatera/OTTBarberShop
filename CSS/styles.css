@@ -1,14 +1,27 @@
+
+
 body{ 
 
     background-color: #171414;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     z-index: 0;
         
     height: 100vh;
 }
 
+body.dark-mode {
+    background-color: rgb(73, 99, 107);
+    
+}
+
+
 .paragraph-text{
     color: #a7a9be;
 }
+
+
 
 .headline-text{
     color: #fffffe;
@@ -34,3 +47,64 @@ body{
     max-width: none; /* Remove the max-width restriction */
     padding-right: 25px; /* Add some right padding */
   }
+
+
+.background-container-1 {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.background-container-1 img {
+    width: 63%; 
+    max-width: 100%; 
+    
+    
+
+}
+
+.card-container {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+
+}
+
+.list-prices-container{
+   position: absolute;
+   left: 59%;
+   top: 10%;
+   
+}
+
+
+.blackpurp-pagebreak{
+    position: relative;
+}
+
+.blackpurp-pagebreak-test{
+    position: absolute;
+    top:10%;
+    left: 40%;
+}
+
+.c-pic-group{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 25%;
+}
+
+.gradient-insta-text {
+    background: linear-gradient(135deg, #833ab4 10%, #fd1d1d 100%);
+    padding-left: 8px;
+    background-clip: text;  
+    -webkit-background-clip: text;  
+    -moz-background-clip: text;  
+    -moz-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
+  }
+

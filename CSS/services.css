@@ -1,0 +1,32 @@
+.whiteblue-pagebreak{
+    position: relative;
+}
+
+.whiteblue-pagebreak-test{
+    position: absolute;
+}
+
+.list-prices-container2 {
+    position: absolute; /* Changed to relative for proper centering */
+    top: 65%;
+    display: flex;
+    justify-content: space-evenly; /* Center the table container */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.table th, .table td {
+    padding: 15px;
+}
+
+.table thead th:nth-child(1),
+.table tbody td:nth-child(1) {
+    padding-right: 120px; /* Increase padding on the right of the 2nd column */
+}
+
+.help-card{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+}
+
+

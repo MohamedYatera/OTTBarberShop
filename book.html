@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/reachus.css">
+    <link rel="stylesheet" href="CSS/book.css">
+
+    <title>Document</title>
+
+    <style>
+        section{
+          padding-top: 30px;
+        }
+      </style>
+</head>
+
+ <body class="body">
+
+  <!-- navbar -->
+   <nav class="navbar navbar-expand-md pt-4 pb-4">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand" href="#intro">
+        <span class="gold-text fw-bold " style="font-size: 27px;">
+         <i class="bi bi-scissors"></i> <!-- icon -->
+          OTT BarberShop
+        </span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="services.html" style="color: #b82c2c;"> Services</a>
+          </li>
+          
+          <li class="nav-item fw-bold">
+            <a class="nav-link fw-bold" href="reviews.html">Reviews</a>
+          </li>
+         
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="reachus.html">Reach Us</a>
+          </li>
+
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-danger fw-bold" href="book.html">Book Now</a>
+          </li>
+
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-danger fw-bold" id="dark-mode-toggle"><i class="bi bi-brightness-high"></i></a>
+          </li>
+       
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Contact -->
+  <section id="serivces" class="mt-5">
+    <div class="contain-lg"> 
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center">
+          <h1>
+            <div class="display-2 headline-text fw-semibold p-effect" data-value="3">Book Now</div>
+            <div class="display-5 headline-text ">You can reach us at</div>
+          </h1>
+        </div>
+      </div>
+
+        <div class="row orangeyellow-pagebreak">
+            <img src="assets/darkbluedots.png" alt="pagebreak">
+        </div>
+
+       
+        <div class="row justify-content-center orangeyellow-pagebreak-test">
+          <div class="col-lg-6">
+          
+            <form class="border border-3 border-danger text-light" style="font-family: Helvetica, sans-serif;" id="regForm" action="">
+
+                <h1 class="fw-bold">Booking:</h1>
+                
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab fw-semibold fs-5">Name:
+                  <p><input placeholder="First name..." oninput="this.className = ''"></p>
+                  <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab fw-semibold fs-5">Contact Info:
+                  <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                  <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab fw-semibold fs-5">Service:
+                    <div id="service-container">
+                        <div class="form-group">
+                            <label class="mt-3" for="services">Select a service</label>
+                            <select class="form-select" id="services" name="services[]" required>
+                                <option value="pricing" selected>HairCut $25</option>
+                                <option value="content">Haircut Kids (Under 12) $25</option>
+                                <option value="other">Haircut (Military and Seniors) $15</option>
+                                <option value="other">Hair & Beard $40</option>
+                                <option value="other">Hair & Hot Shave $45</option>
+                                <option value="other">Beard $20</option>
+                                <option value="other">Thread $20</option>
+                                <option value="other">Outline $20</option>
+                                <option value="other">Shampoo $20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger border border-2  mt-4"  id="addServiceBtn">Add Another Service</button>
+                </div>
+                
+                <div class="tab fw-semibold fs-5">Date and Time:
+                    <div class="form-group">
+                        <label class="mt-3" for="appointmentDate">Select a date</label>
+                        <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="appointmentTime">Select a time (a for am and p for pm) </label>
+                        <input class="mb-3" type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
+                    </div>
+                </div>
+
+                <div class="tab fw-semibold fs-5">Booking Confirmed: <i class="bi bi-patch-check-fill"></i>
+                    <div class="form-group">
+                        <label class="mt-3" for="appointmentDate">Date: xxxx-xx-xx</label>
+                        <br>
+                        <label class="mt-3" for="appointmentDate">Time: xx-xx</label>
+                        <br>
+                        <label class="mt-3" for="appointmentDate">Services: x,y,z</label>
+                       
+                    </div>
+                   
+                </div>
+                
+                <div style="overflow:auto;">
+                  <div style="float:right;">
+                    <button class="btn btn-danger border border-2 " type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button class="btn btn-danger border border-2" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                  </div>
+                </div>
+                
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+                
+                </form> 
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="confirm-submission" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Message Sent <i class="bi bi-check-circle"></i> </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Your message was received, we will get back to you as soon as possible</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+         
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    
+  </section>
+
+   <!-- Footer-->
+  <section>
+    <footer class="footer font">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4 class="fw-semibold">Company</h4>
+            <ul>
+              <li><a href="services.html"> our services</a></li>
+              <li><a href="#"> privacy policy</a></li>
+              <li><a href="#"> affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="fw-semibold">online shop</h4>
+            <ul>
+              <li><a href="#">Merch</a></li>
+              <li><a href="#">Equipment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="fw-semibold">Contact us</h4>
+            <ul>
+              <li><a href="reachus.html"> xxx-xxx-xxxx</a></li>
+              <li><a href="reachus.html"> Address</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="fw-semibold">follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-yelp"></i></a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/addbutton.js"></script>
+    <script src="JS/formpages.js"></script>
+    <script src="JS/parallax.js"></script>
+    <script src="JS/dark-mode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

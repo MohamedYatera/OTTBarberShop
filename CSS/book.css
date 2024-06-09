@@ -6,6 +6,21 @@
     width: 70%;
     min-width: 300px;
   }
+
+  .orangeyellow-pagebreak{
+    position: relative;
+   
+}
+
+.orangeyellow-pagebreak-test{
+    position: absolute; 
+    top: 55%;
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    left: 65px;
+}
+
   
   /* Style the input fields */
   input {
